@@ -14,4 +14,30 @@ class StringVaildator {
         }
         return true
     }
+
+    fun reverseString(inputString: String): String {
+        if (inputString.isEmpty() || inputString.length == 1) {
+            return inputString
+        } else {
+            return reverseString(inputString.substring(1)) + inputString[0]
+        }
+    }
+
+    fun stringDuplicate(inputString: String): Boolean {
+        if (inputString.isEmpty() || inputString.length == 1) {
+            return true
+        } else {
+            val words = inputString.split("\\s+".toRegex())
+            val seen = mutableSetOf<String>()
+            for (word in words) {
+                if (!seen.add(word)) {
+                    return true // duplicate found
+                }
+            }
+            return false
+
+        }
+    }
+
+
 }
