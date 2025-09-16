@@ -23,3 +23,4 @@ rootProject.name = "android_unit_testing_master"
 include(":app")
 include(":basic_test")
 include(":unit_test_in_android")
+include(":instrumentation_test")
