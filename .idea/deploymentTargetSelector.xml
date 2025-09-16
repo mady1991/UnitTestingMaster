@@ -8,9 +8,6 @@
       <SelectionState runConfigName="unit_test_in_android">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="NegativeNumberVaildatorTest">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
     </selectionStates>
   </component>
 </project>
