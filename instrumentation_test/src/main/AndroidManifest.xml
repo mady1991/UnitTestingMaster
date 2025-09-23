@@ -9,4 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_unit_testing_master" />
 
+
+    <activity
+        android:name=".ui.MainActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".moreui.SampleUi"
+        android:exported="true" />
+
+
 </manifest>

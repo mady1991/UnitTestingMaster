@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     private val quoteText: TextView
         get() = findViewById(R.id.quoteText)
 
+    private val msgTxt: TextView
+        get() = findViewById(R.id.text_msg)
     private val quoteAuthor: TextView
         get() = findViewById(R.id.quoteAuthor)
 
@@ -23,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         mainViewModel = ViewModelProvider(this, MainViewModelFactory(application)).get(MainViewModel::class.java)
         setQuote(mainViewModel.getQuote())
+
+        //When intent have some value
+        val msg = intent.getStringExtra("msg")
+        if(msg != null){
+            msgTxt.text = msg
+        }
 
     }
 
