@@ -17,6 +17,9 @@
       <SelectionState runConfigName="testNextBtnQuote_as_Expected()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
+      <SelectionState runConfigName="room_db_testing">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>

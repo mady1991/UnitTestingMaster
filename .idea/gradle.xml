@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/basic_test" />
             <option value="$PROJECT_DIR$/instrumentation_test" />
+            <option value="$PROJECT_DIR$/room_db_testing" />
             <option value="$PROJECT_DIR$/unit_test_in_android" />
           </set>
         </option>
