@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.android.mockito_unit_testing"
+    namespace = "com.android.coroutines_unit_testing"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.android.mockito_unit_testing"
+        applicationId = "com.android.coroutines_unit_testing"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -49,19 +49,12 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.gson)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(libs.androidx.espresso.intents)
-    androidTestImplementation(libs.mockito.core)
-    androidTestImplementation(libs.mockito.kotlin)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
-    androidTestImplementation(libs.kotlinx.coroutines.test)
     debugImplementation(libs.androidx.ui.test.manifest)
-
+    testImplementation(kotlin("test"))
 }
