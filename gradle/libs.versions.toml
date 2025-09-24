@@ -14,8 +14,17 @@ gson = "2.8.6"
 mockito = "4.0.0"
 mockitoKotlin = "2.2.0"
 coroutines = "1.8.1"
+archCoreTesting = "2.2.0"
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+glide = "4.16.0"
+lifecycleViewModelKtx = "2.9.0"
+lifecycleViewmodelKtxVersion = "2.9.4"
+runtimeLivedata = "1.9.1"
 
 [libraries]
+
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewModelKtx" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -36,12 +45,28 @@ material = { group = "com.google.android.material", name = "material", version.r
 # Gson
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
+# MockWebServer
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
+
+# Glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+
+#Network
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+
 # Mockito
 mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
 mockito-kotlin = { group = "com.nhaarman.mockitokotlin2", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
 
 # Coroutines Testing
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+androidx-arch-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "archCoreTesting" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtxVersion" }
+androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
 
 
 [plugins]
